@@ -36,10 +36,10 @@ resource "aws_eks_cluster" "paul-eks" {
 
   vpc_config {
     subnet_ids = [
-      "subnet-011932b23060d0894",
-      "subnet-0b6b78ee202ba94fc",
-      "subnet-05a69db74d2a4e5cf",
-      "subnet-08ab81b28c380d8d9"
+      "subnet-0aea2919da32c9aa8",
+      "subnet-03c5ccd0beecb27ff",
+      "subnet-07ad170691c694824",
+      "subnet-046992d58767ca046"
     ]
     # Private access to the EKS control plane
     ##Auto create EndPoint private Access. 
