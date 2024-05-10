@@ -42,8 +42,8 @@ resource "aws_eks_node_group" "paul-eks-private-nodes" {
   node_role_arn   = aws_iam_role.paul-eks-nodes.arn
 
   subnet_ids = [
-    "	subnet-011932b23060d0894",
-    "	subnet-0b6b78ee202ba94fc"
+    "subnet-0aea2919da32c9aa8",
+    "subnet-03c5ccd0beecb27ff"
   ]
    remote_access {
     ec2_ssh_key = "_linux_key.ppk"
