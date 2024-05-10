@@ -46,7 +46,7 @@ resource "aws_eks_node_group" "paul-eks-private-nodes" {
     "subnet-03c5ccd0beecb27ff"
   ]
    remote_access {
-    ec2_ssh_key = "_linux_key.ppk"
+    ec2_ssh_key = "_linux_key"
   }
 
 
