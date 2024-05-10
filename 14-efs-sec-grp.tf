@@ -8,7 +8,7 @@ resource "aws_security_group" "paul-eks-allow_nfs" {
     from_port   = 2049
     to_port     = 2049
     protocol    = "tcp"
-    cidr_blocks = [tolist("10.167.80.0/22")]
+    cidr_blocks = ["10.167.80.0/22"]
   }
 
   egress {
