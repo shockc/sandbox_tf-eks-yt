@@ -32,7 +32,11 @@ resource "aws_iam_role_policy_attachment" "paul-eks-nodes-ssm_policy_attachment"
   policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
   role       = aws_iam_role.paul-eks-nodes.name
 }
-
+##This policy attachement is for CloudWatch
+resource "aws_iam_role_policy_attachment" "paul-eks-nodes-CloudWatchAgentServerPolicy" {
+  policy_arn = "arn:aws:iam::aws:policy/CloudWatchAgentServerPolicy"
+  role       = aws_iam_role.paul-eks-nodes.name
+}
 
 resource "aws_eks_node_group" "paul-eks-private-nodes" {
   cluster_name    = aws_eks_cluster.paul-eks.name
